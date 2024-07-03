@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     balanced_data
+Instances:    376
+Attributes:   8
+              diemTD
+              diemCT
+              diemMT
+              diemGQVD
+              diemKT1
+              diemKT2
+              diemCK
+              target
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+diemCK <= 4.9
+|   diemKT1 <= 7.7
+|   |   diemCK <= 3.68397
+|   |   |   diemTD <= 7.740599: Fail (74.0/2.0)
+|   |   |   diemTD > 7.740599
+|   |   |   |   diemCT <= 5.3: Fail (10.0/1.0)
+|   |   |   |   diemCT > 5.3
+|   |   |   |   |   diemKT1 <= 4.1: Fail (5.0/1.0)
+|   |   |   |   |   diemKT1 > 4.1: Pass (7.0)
+|   |   diemCK > 3.68397
+|   |   |   diemKT2 <= 5
+|   |   |   |   diemMT <= 4.5: Fail (18.0)
+|   |   |   |   diemMT > 4.5
+|   |   |   |   |   diemKT1 <= 5.3
+|   |   |   |   |   |   diemTD <= 7.8: Fail (7.0/1.0)
+|   |   |   |   |   |   diemTD > 7.8: Pass (2.0)
+|   |   |   |   |   diemKT1 > 5.3: Pass (5.0)
+|   |   |   diemKT2 > 5
+|   |   |   |   diemCT <= 4.6
+|   |   |   |   |   diemMT <= 3.52707: Fail (3.0)
+|   |   |   |   |   diemMT > 3.52707: Pass (3.0)
+|   |   |   |   diemCT > 4.6: Pass (13.0)
+|   diemKT1 > 7.7
+|   |   diemCK <= 2.687509
+|   |   |   diemCT <= 3.704744: Fail (3.0)
+|   |   |   diemCT > 3.704744: Pass (5.0/1.0)
+|   |   diemCK > 2.687509: Pass (22.0)
+diemCK > 4.9
+|   diemKT2 <= 2.732932
+|   |   diemKT1 <= 4.843965
+|   |   |   diemCK <= 7.1: Fail (7.0)
+|   |   |   diemCK > 7.1: Pass (5.0/1.0)
+|   |   diemKT1 > 4.843965: Pass (11.0)
+|   diemKT2 > 2.732932: Pass (176.0/1.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	35
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         330               87.766  %
+Incorrectly Classified Instances        46               12.234  %
+Kappa statistic                          0.7233
+Mean absolute error                      0.135 
+Root mean squared error                  0.3426
+Relative absolute error                 30.3811 %
+Root relative squared error             72.7214 %
+Total Number of Instances              376     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.912    0.192    0.905      0.912    0.909      0.723    0.826     0.851     Pass
+                 0.808    0.088    0.821      0.808    0.815      0.723    0.826     0.724     Fail
+Weighted Avg.    0.878    0.157    0.877      0.878    0.877      0.723    0.826     0.809     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 229  22 |   a = Pass
+  24 101 |   b = Fail
+

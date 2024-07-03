@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     balanced_data
+Instances:    376
+Attributes:   8
+              diemTD
+              diemCT
+              diemMT
+              diemGQVD
+              diemKT1
+              diemKT2
+              diemCK
+              target
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -10.240127056366342
+    Node 2    8.219205657117271
+    Node 3    5.136030911373106
+    Node 4    4.751674643956525
+    Node 5    10.094636994901224
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    10.239700569986978
+    Node 2    -8.210480717068618
+    Node 3    -5.138079729622616
+    Node 4    -4.7524016948752115
+    Node 5    -10.100098964145905
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    7.795859853119888
+    Attrib diemTD    3.1828261933008
+    Attrib diemCT    2.941501789479208
+    Attrib diemMT    3.56712250845621
+    Attrib diemGQVD    3.059550095682055
+    Attrib diemKT1    4.828994949772903
+    Attrib diemKT2    4.912841267163935
+    Attrib diemCK    9.805045682862504
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    4.277486677451039
+    Attrib diemTD    1.6617495906321116
+    Attrib diemCT    1.7184681321474766
+    Attrib diemMT    2.6290978711858095
+    Attrib diemGQVD    1.0081139314756928
+    Attrib diemKT1    1.9989242967321381
+    Attrib diemKT2    2.9206289112422685
+    Attrib diemCK    6.796271401585622
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    2.750674435952101
+    Attrib diemTD    1.892974986006312
+    Attrib diemCT    2.321071618523091
+    Attrib diemMT    1.4554495458002121
+    Attrib diemGQVD    3.978583694792124
+    Attrib diemKT1    4.438175817389876
+    Attrib diemKT2    2.6742161473007693
+    Attrib diemCK    4.530522892415633
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    9.553603854232104
+    Attrib diemTD    3.848916195410226
+    Attrib diemCT    3.5662120869814946
+    Attrib diemMT    4.316176064619182
+    Attrib diemGQVD    3.7372815016094285
+    Attrib diemKT1    5.829927983792732
+    Attrib diemKT2    5.890433946312786
+    Attrib diemCK    11.774986653563928
+Class Pass
+    Input
+    Node 0
+Class Fail
+    Input
+    Node 1
+
+
+Time taken to build model: 0.2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         371               98.6702 %
+Incorrectly Classified Instances         5                1.3298 %
+Kappa statistic                          0.97  
+Mean absolute error                      0.0185
+Root mean squared error                  0.0993
+Relative absolute error                  4.1721 %
+Root relative squared error             21.0675 %
+Total Number of Instances              376     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.024    0.988      0.992    0.990      0.970    0.999     1.000     Pass
+                 0.976    0.008    0.984      0.976    0.980      0.970    0.999     0.999     Fail
+Weighted Avg.    0.987    0.019    0.987      0.987    0.987      0.970    0.999     0.999     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 249   2 |   a = Pass
+   3 122 |   b = Fail
+

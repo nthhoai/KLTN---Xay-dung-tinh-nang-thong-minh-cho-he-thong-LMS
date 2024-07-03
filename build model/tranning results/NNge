@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.NNge -G 5 -I 5
+Relation:     balanced_data
+Instances:    376
+Attributes:   8
+              diemTD
+              diemCT
+              diemMT
+              diemGQVD
+              diemKT1
+              diemKT2
+              diemCK
+              target
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+NNGE classifier
+
+Rules generated :
+	class Fail IF : 2.2<=diemTD<=7.880867524 ^ 2.1<=diemCT<=7.922210758 ^ 2.7<=diemMT<=9.8 ^ 3.2<=diemGQVD<=9.740540424 ^ 2.0<=diemKT1<=8.8 ^ 2.4<=diemKT2<=9.9 ^ 2.2<=diemCK<=3.7  (67)
+	class Fail IF : diemTD=8.645113413 ^ diemCT=7.389624754 ^ diemMT=3.267670119 ^ diemGQVD=7.975035007 ^ diemKT1=2.722556706 ^ diemKT2=2.732931952 ^ diemCK=3.390226826  (1)
+	class Fail IF : 2.0<=diemTD<=8.2 ^ 6.540381044<=diemCT<=9.8 ^ 2.0<=diemMT<=2.623974597 ^ 2.9<=diemGQVD<=9.8 ^ 2.5<=diemKT1<=6.6 ^ 3.0<=diemKT2<=7.9 ^ 2.1<=diemCK<=2.9  (4)
+	class Fail IF : 2.356544166<=diemTD<=5.707906384 ^ 3.128672134<=diemCT<=9.1 ^ 2.8569918<=diemMT<=3.527069945 ^ 2.5<=diemGQVD<=9.6 ^ 2.5<=diemKT1<=5.255004059 ^ 2.342831967<=diemKT2<=6.3 ^ 3.770645646<=diemCK<=4.493448556  (11)
+	class Fail IF : 3.8<=diemTD<=4.828013911 ^ 8.452798206<=diemCT<=9.4 ^ 4.5<=diemMT<=8.947496342 ^ 3.674175858<=diemGQVD<=9.5 ^ 2.2<=diemKT1<=3.951648284 ^ 4.303240028<=diemKT2<=6.117612056 ^ 2.687149071<=diemCK<=3.549558178  (7)
+	class Fail IF : 7.7<=diemTD<=7.719525099 ^ 5.5<=diemCT<=6.250347845 ^ 3.157879609<=diemMT<=6.7 ^ 3.2<=diemGQVD<=6.103765882 ^ 2.730822745<=diemKT1<=4.9 ^ 2.938354509<=diemKT2<=3.6 ^ 3.8<=diemCK<=3.827056863  (2)
+	class Fail IF : 8.0<=diemTD<=8.001843787 ^ 4.391242013<=diemCT<=4.4 ^ 5.291702959<=diemMT<=5.3 ^ 3.9<=diemGQVD<=3.911062721 ^ 2.2<=diemKT1<=2.211523668 ^ 2.697695266<=diemKT2<=2.7 ^ 6.399078107<=diemCK<=6.4  (2)
+	class Fail IF : diemTD=2.818504851 ^ diemCT=3.287663433 ^ diemMT=2.618504851 ^ diemGQVD=9.6 ^ diemKT1=3.459906157 ^ diemKT2=2.303084142 ^ diemCK=4.856822015  (1)
+	class Fail IF : 4.743823569<=diemTD<=5.2 ^ 7.2<=diemCT<=7.509548293 ^ 3.785955892<=diemMT<=3.9 ^ 2.0<=diemGQVD<=2.162920154 ^ 6.327531553<=diemKT1<=6.8 ^ 3.5<=diemKT2<=3.614044108 ^ 4.567415969<=diemCK<=4.6  (2)
+	class Fail IF : diemTD=2.529224502 ^ diemCT=8.540027158 ^ diemMT=3.027700664 ^ diemGQVD=3.495360591 ^ diemKT1=3.490789077 ^ diemKT2=3.76925166 ^ diemCK=5.218421846  (1)
+	class Fail IF : 6.090633633<=diemTD<=9.2 ^ 3.92990542<=diemCT<=8.002772969 ^ 3.105543332<=diemMT<=5.675227005 ^ 5.697227031<=diemGQVD<=9.1 ^ 2.2<=diemKT1<=3.664551247 ^ 2.3<=diemKT2<=2.693070835 ^ 4.308680473<=diemCK<=4.9  (6)
+	class Fail IF : 8.30781588<=diemTD<=8.75742078 ^ 4.4<=diemCT<=4.815786554 ^ 7.881823225<=diemMT<=9.6 ^ 4.56758573<=diemGQVD<=5.128237893 ^ 4.3<=diemKT1<=6.455030559 ^ 2.604780442<=diemKT2<=3.372069045 ^ 2.74257922<=diemCK<=3.19218412  (3)
+	class Fail IF : 2.4<=diemTD<=2.544068181 ^ 3.9<=diemCT<=4.06464935 ^ 8.362792208<=diemMT<=8.5 ^ 6.8<=diemGQVD<=6.875464285 ^ 5.110814935<=diemKT1<=5.2 ^ 4.762792208<=diemKT2<=4.9 ^ 3.972558442<=diemCK<=4.0  (2)
+	class Fail IF : 2.2<=diemTD<=8.4 ^ 2.5<=diemCT<=9.7 ^ 2.0<=diemMT<=4.932441615 ^ 3.81033724<=diemGQVD<=9.6 ^ 2.710497757<=diemKT1<=4.8 ^ 2.2<=diemKT2<=2.597900449 ^ 6.2<=diemCK<=6.6  (5)
+	class Fail IF : 4.5<=diemTD<=9.4 ^ 4.390445097<=diemCT<=5.0 ^ 5.5<=diemMT<=8.6 ^ 6.3<=diemGQVD<=8.2 ^ 7.4<=diemKT1<=9.9 ^ 2.0<=diemKT2<=2.011147387 ^ 2.1<=diemCK<=2.3  (3)
+	class Pass IF : 2.0<=diemTD<=2.4 ^ 2.4<=diemCT<=9.8 ^ 3.5<=diemMT<=9.7 ^ 2.8<=diemGQVD<=8.2 ^ 2.3<=diemKT1<=9.3 ^ 2.9<=diemKT2<=9.9 ^ 4.5<=diemCK<=9.2  (11)
+	class Pass IF : 2.6<=diemTD<=9.9 ^ 2.0<=diemCT<=10.0 ^ 2.1<=diemMT<=10.0 ^ 2.2<=diemGQVD<=9.9 ^ 2.3<=diemKT1<=10.0 ^ 2.7<=diemKT2<=10.0 ^ 4.5<=diemCK<=10.0  (170)
+	class Fail IF : 3.730061057<=diemTD<=3.801757727 ^ 3.298995585<=diemCT<=3.33996511 ^ 3.147502181<=diemMT<=3.150062776 ^ 7.849937224<=diemGQVD<=7.852497819 ^ 3.349811672<=diemKT1<=3.357493458 ^ 8.010078501<=diemKT2<=8.102259935 ^ 3.899623344<=diemCK<=3.914986916  (2)
+	class Fail IF : 9.137054572<=diemTD<=9.4 ^ 2.7<=diemCT<=2.80682158 ^ 3.258914777<=diemMT<=3.3 ^ 6.7<=diemGQVD<=6.831472714 ^ 2.491782955<=diemKT1<=2.5 ^ 9.301395465<=diemKT2<=9.4 ^ 3.234263643<=diemCK<=3.3  (3)
+	class Pass IF : 2.1<=diemTD<=5.9 ^ 4.1<=diemCT<=7.3 ^ 4.0<=diemMT<=9.2 ^ 4.2<=diemGQVD<=8.9 ^ 6.6<=diemKT1<=8.8 ^ 2.5<=diemKT2<=2.6 ^ 6.4<=diemCK<=7.6  (4)
+	class Pass IF : diemTD=6.5 ^ diemCT=6.3 ^ diemMT=8.1 ^ diemGQVD=2.1 ^ diemKT1=4.4 ^ diemKT2=3.2 ^ diemCK=7.4  (1)
+	class Pass IF : diemTD=5.2 ^ diemCT=9.8 ^ diemMT=2.3 ^ diemGQVD=5.0 ^ diemKT1=3.3 ^ diemKT2=7.4 ^ diemCK=4.4  (1)
+	class Pass IF : 3.3<=diemTD<=9.7 ^ 2.9<=diemCT<=8.5 ^ 2.2<=diemMT<=4.9 ^ 2.8<=diemGQVD<=9.5 ^ 3.4<=diemKT1<=8.3 ^ 7.0<=diemKT2<=9.6 ^ 3.8<=diemCK<=4.3  (7)
+	class Pass IF : 2.8<=diemTD<=8.6 ^ 3.7<=diemCT<=9.8 ^ 5.0<=diemMT<=9.7 ^ 2.3<=diemGQVD<=9.6 ^ 2.6<=diemKT1<=9.7 ^ 2.4<=diemKT2<=9.9 ^ 3.9<=diemCK<=4.2  (11)
+	class Pass IF : 8.8<=diemTD<=9.7 ^ 5.8<=diemCT<=7.9 ^ 8.6<=diemMT<=9.6 ^ 4.6<=diemGQVD<=7.0 ^ 3.0<=diemKT1<=6.0 ^ 2.1<=diemKT2<=8.5 ^ 2.7<=diemCK<=3.0  (3)
+	class Pass IF : 5.3<=diemTD<=9.4 ^ 8.0<=diemCT<=9.9 ^ 7.2<=diemMT<=8.6 ^ 4.8<=diemGQVD<=8.7 ^ 2.3<=diemKT1<=8.1 ^ 3.2<=diemKT2<=8.2 ^ 2.5<=diemCK<=3.6  (4)
+	class Pass IF : 2.0<=diemTD<=9.0 ^ 2.3<=diemCT<=9.5 ^ 2.3<=diemMT<=8.6 ^ 4.1<=diemGQVD<=9.1 ^ 2.6<=diemKT1<=8.8 ^ 2.0<=diemKT2<=2.3 ^ 7.5<=diemCK<=9.9  (6)
+	class Pass IF : diemTD=8.2 ^ diemCT=6.9 ^ diemMT=4.8 ^ diemGQVD=5.2 ^ diemKT1=6.8 ^ diemKT2=9.1 ^ diemCK=3.4  (1)
+	class Pass IF : 3.4<=diemTD<=9.1 ^ 5.6<=diemCT<=6.5 ^ 6.0<=diemMT<=7.5 ^ 3.5<=diemGQVD<=6.2 ^ 2.4<=diemKT1<=8.0 ^ 6.1<=diemKT2<=8.4 ^ diemCK=3.8  (3)
+	class Pass IF : diemTD=7.1 ^ diemCT=8.5 ^ diemMT=4.0 ^ diemGQVD=3.3 ^ diemKT1=8.3 ^ diemKT2=8.8 ^ diemCK=3.5  (1)
+	class Pass IF : 3.5<=diemTD<=4.3 ^ 3.0<=diemCT<=7.5 ^ 7.0<=diemMT<=10.0 ^ 9.8<=diemGQVD<=9.9 ^ 4.5<=diemKT1<=8.8 ^ 2.0<=diemKT2<=9.4 ^ 2.3<=diemCK<=2.9  (4)
+	class Pass IF : 3.2<=diemTD<=8.9 ^ 2.5<=diemCT<=8.4 ^ 6.5<=diemMT<=9.1 ^ 5.4<=diemGQVD<=7.9 ^ 9.2<=diemKT1<=9.8 ^ 2.8<=diemKT2<=10.0 ^ 2.2<=diemCK<=3.7  (4)
+	class Fail IF : diemTD=3.0 ^ diemCT=6.5 ^ diemMT=2.4 ^ diemGQVD=5.3 ^ diemKT1=2.0 ^ diemKT2=2.2 ^ diemCK=8.2  (1)
+	class Pass IF : 4.2<=diemTD<=9.5 ^ 3.2<=diemCT<=9.1 ^ 3.1<=diemMT<=9.3 ^ 3.0<=diemGQVD<=9.5 ^ 2.0<=diemKT1<=2.2 ^ 2.6<=diemKT2<=8.4 ^ 6.9<=diemCK<=9.6  (5)
+	class Pass IF : diemTD=6.7 ^ diemCT=8.3 ^ diemMT=7.0 ^ diemGQVD=9.8 ^ diemKT1=2.2 ^ diemKT2=7.7 ^ diemCK=5.4  (1)
+	class Pass IF : diemTD=6.5 ^ diemCT=9.3 ^ diemMT=4.0 ^ diemGQVD=3.6 ^ diemKT1=10.0 ^ diemKT2=6.0 ^ diemCK=4.0  (1)
+	class Pass IF : diemTD=4.0 ^ diemCT=9.5 ^ diemMT=4.3 ^ diemGQVD=7.5 ^ diemKT1=7.8 ^ diemKT2=7.7 ^ diemCK=2.6  (1)
+	class Pass IF : diemTD=7.8 ^ diemCT=6.4 ^ diemMT=4.9 ^ diemGQVD=7.3 ^ diemKT1=6.1 ^ diemKT2=7.0 ^ diemCK=2.1  (1)
+	class Pass IF : diemTD=7.4 ^ diemCT=6.1 ^ diemMT=3.6 ^ diemGQVD=2.7 ^ diemKT1=8.1 ^ diemKT2=8.6 ^ diemCK=3.0  (1)
+	class Pass IF : 4.7<=diemTD<=8.9 ^ 4.4<=diemCT<=5.9 ^ 2.0<=diemMT<=2.6 ^ 6.5<=diemGQVD<=9.6 ^ 5.5<=diemKT1<=8.5 ^ 8.7<=diemKT2<=9.8 ^ 2.2<=diemCK<=2.8  (2)
+	class Pass IF : 5.8<=diemTD<=7.9 ^ 6.1<=diemCT<=7.1 ^ 8.7<=diemMT<=9.9 ^ 5.6<=diemGQVD<=7.0 ^ 3.7<=diemKT1<=6.2 ^ 2.1<=diemKT2<=2.4 ^ 4.9<=diemCK<=6.3  (2)
+	class Pass IF : diemTD=8.8 ^ diemCT=4.3 ^ diemMT=3.0 ^ diemGQVD=6.1 ^ diemKT1=10.0 ^ diemKT2=4.2 ^ diemCK=2.6  (1)
+	class Pass IF : diemTD=6.9 ^ diemCT=4.9 ^ diemMT=9.9 ^ diemGQVD=4.5 ^ diemKT1=7.9 ^ diemKT2=2.7 ^ diemCK=3.3  (1)
+	class Pass IF : diemTD=5.7 ^ diemCT=2.1 ^ diemMT=9.5 ^ diemGQVD=9.9 ^ diemKT1=5.5 ^ diemKT2=3.0 ^ diemCK=3.7  (1)
+	class Pass IF : 4.6<=diemTD<=10.0 ^ 4.4<=diemCT<=5.5 ^ diemMT=8.9 ^ diemGQVD=2.0 ^ 6.4<=diemKT1<=9.8 ^ 2.2<=diemKT2<=5.0 ^ 7.9<=diemCK<=9.0  (2)
+	class Fail IF : diemTD=8.2 ^ diemCT=3.2 ^ diemMT=3.3 ^ diemGQVD=7.3 ^ diemKT1=9.6 ^ diemKT2=3.4 ^ diemCK=2.6  (1)
+	class Pass IF : diemTD=8.4 ^ diemCT=2.4 ^ diemMT=9.7 ^ diemGQVD=3.1 ^ diemKT1=4.5 ^ diemKT2=9.6 ^ diemCK=3.3  (1)
+	class Fail IF : diemTD=9.0 ^ diemCT=6.5 ^ diemMT=5.8 ^ diemGQVD=2.7 ^ diemKT1=3.3 ^ diemKT2=8.1 ^ diemCK=2.2  (1)
+
+Stat :
+	class Pass : 28 exemplar(s) including 15 Hyperrectangle(s) and 13 Single(s).
+	class Fail : 20 exemplar(s) including 14 Hyperrectangle(s) and 6 Single(s).
+
+	Total : 48 exemplars(s) including 29 Hyperrectangle(s) and 19 Single(s).
+
+	Feature weights : [0.038305078796345475 0.021370436280746582 0.03488466376106073 0.01401924990464306 0.11725931656545704 0.058645491249115556 0.3983342836276734]
+
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         335               89.0957 %
+Incorrectly Classified Instances        41               10.9043 %
+Kappa statistic                          0.7558
+Mean absolute error                      0.109 
+Root mean squared error                  0.3302
+Relative absolute error                 24.548  %
+Root relative squared error             70.0922 %
+Total Number of Instances              376     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.912    0.152    0.923      0.912    0.918      0.756    0.880     0.901     Pass
+                 0.848    0.088    0.828      0.848    0.838      0.756    0.880     0.753     Fail
+Weighted Avg.    0.891    0.131    0.892      0.891    0.891      0.756    0.880     0.852     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 229  22 |   a = Pass
+  19 106 |   b = Fail
+
